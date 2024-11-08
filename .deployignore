@@ -1,0 +1,11 @@
+.git*
+.vscode
+.env
+node_modules
+**/node_modules
+client/node_modules
+client/src
+test
+__tests__
+*.test.ts
+*.test.tsx

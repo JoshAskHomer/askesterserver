@@ -1,0 +1,7 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/dcee7d56-510a-4aae-8166-d6465fb773a3/resourceGroups/askester/providers/Microsoft.Web/sites/askesterapp",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}"
+    ],
+}
