@@ -55,31 +55,6 @@ export class KnowledgeBaseService {
         return parseFloat((bytes / Math.pow(1024, i)).toFixed(2)) + ' ' + sizes[i];
     }
 
-    async loadFiles(containerName: string) {
-        try {
-
-            console.log("Loading files...")
-            const credential = new DefaultAzureCredential();
-
-            const loader = new AzureBlobStorageContainerLoader({
-                azureConfig: {
-                    connectionString: "DefaultEndpointsProtocol=https;AccountName=askesterstorage;AccountKey=/m5nHZ8QaklLsYcOu1JWjMQUEfvgRa/lHLC/e3sB+ryZ+bRPBTeEzSNkV+C8xQeDppbzl1Zl8kaA+AStro3ymQ==;EndpointSuffix=core.windows.net",
-                    container: containerName
-                },
-                unstructuredConfig: {
-                    apiUrl: "https://api.unstructuredapp.io/general/v0/general",
-                    apiKey: "L8wioFiZ2NWbvgn4usTbz8ZWjjqyoB"
-                }
-            });
-            console.log("...")
-            console.log("...")
-            const docs = await loader.load();
-            console.log("Loaded");
-            console.log(docs);
-        } catch (error) {
-            console.error('Error loading files:', error);
-            throw error;
-        }
-    }
+    
 
 }
