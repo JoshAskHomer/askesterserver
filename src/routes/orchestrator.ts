@@ -1,5 +1,5 @@
 import express from 'express';
-import { OrchestratorService } from '../services/orchestrator';
+import { OrchestratorService } from '../services/orchestratorService';
 
 const router = express.Router();
 const orchestrator = new OrchestratorService();
