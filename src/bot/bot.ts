@@ -1,5 +1,5 @@
 import { ActivityHandler, TurnContext } from 'botbuilder';
-import { OrchestratorService } from '../services/orchestrator';
+import { OrchestratorService } from '../services/orchestratorService';
 
 export class AskEsterBot extends ActivityHandler {
   private orchestrator: OrchestratorService;
