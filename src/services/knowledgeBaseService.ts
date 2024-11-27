@@ -15,7 +15,7 @@ config();
 
 export class KnowledgeBaseService {
 
-    private indexingStatusCache: NodeCache;
+    private indexingStatusCache: NodeCache; 
     private blobServiceClient: BlobServiceClient;
 
     constructor() {
