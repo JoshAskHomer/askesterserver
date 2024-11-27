@@ -8,10 +8,6 @@ config();
 const authentication = new ConfigurationBotFrameworkAuthentication(process.env as any);
 const adapter = new CloudAdapter(authentication);
 
-console.log("Bot Adapter Initialized\n");
-console.log(process.env.MicrosoftAppId + "\n");
-console.log(process.env.MicrosoftAppPassword + "\n");
-
 const bot = new AskEsterBot();
 const router = express.Router();
 

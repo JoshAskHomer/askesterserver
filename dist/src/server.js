@@ -11,7 +11,6 @@ const orchestrator_1 = require("./routes/orchestrator");
 const tab_1 = require("./routes/tab");
 const express_fileupload_1 = __importDefault(require("express-fileupload"));
 const knowledgebase_1 = require("./routes/knowledgebase");
-const knowledgeBaseService_1 = require("./services/knowledgeBaseService");
 (0, dotenv_1.config)();
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
@@ -27,4 +26,3 @@ app.use('/tab', tab_1.tabRouter);
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-new knowledgeBaseService_1.KnowledgeBaseService().indexPersonalDocument("Company Handbook.docx", "josh@askhomer.ai", "askhomerai");

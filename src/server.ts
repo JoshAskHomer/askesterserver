@@ -28,5 +28,3 @@ app.use('/tab', tabRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-new KnowledgeBaseService().indexPersonalDocument("Company Handbook.docx", "josh@askhomer.ai", "askhomerai");
